@@ -1,0 +1,99 @@
+$mainColor: #E3E3E4
+
+*
+    font-family: 'DM Sans', sans-serif
+
+body
+    box-sizing: border-box
+    background-color: #21182f
+    padding: 0
+    margin: 0
+    color: $mainColor
+
+.titulo
+    margin: 2em 0
+    text-align: center
+    font-size: 1.5em
+
+    h1
+        display: inline-block
+        padding: 0.8em 0.5em
+        border-radius: 1em
+        background-color: #D2D2D2
+        color: #321A37
+        margin: auto
+        animation: littleMove 2.5s ease infinite 
+
+#inicioBoton
+    border: transparent
+    border-radius: 48%
+    background-color: $mainColor
+    font-size: 7em
+    text-indent: 0.09em
+    color: #501ca2
+    border: 0.07em solid #501ca2
+    transition: background 300ms
+
+#inicioBoton:hover
+    background-color: grey
+
+.pares
+    text-align: center
+
+.pares__span
+
+    input
+        border: transparent
+        border-radius: 0.05em
+        margin: 0.05em
+        width: 1em
+        font-size: 7em
+        background-color: $mainColor
+        color: transparent
+        transition: background-color 300ms, color 100ms
+
+    input:hover
+        background-color: grey
+    
+    input:disabled
+        background: transparent
+
+.contadorYBestTime
+    margin: 2em
+    font-size: 2em
+
+.contador
+    display: inline-block
+    margin-top: 0.8em
+    width: 7em
+    line-height: 0.1em
+    border-radius: 1em
+    text-align: center
+    background-color: #D2D2D2
+    color: #321A37
+
+.bestTime
+    display: inline-block
+    float: right
+    text-align: center
+    color: #D2D2D2
+
+#theBestTime
+    color: #A601BC
+    text-shadow: 1px 1px 0 white
+
+@keyframes littleMove
+    0%
+        transform: rotate(0deg)
+
+    25%
+        transform: rotate(2deg)
+
+    50%
+        transform: rotate(0deg)
+
+    75%
+        transform: rotate(-2deg)
+
+    100%
+        transform: rotate(0deg)
